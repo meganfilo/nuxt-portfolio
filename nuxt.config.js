@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "Megan Filo - Full Stack Web Developer",
+    title: "Megan Filo - Fullstack Web Developer",
     htmlAttrs: {
       lang: "en",
     },
@@ -34,6 +34,7 @@ export default {
     { path: "~/components/ui", extensions: ["vue"] },
     { path: "~/components/layout", extensions: ["vue"] },
     { path: "~/components/home", extensions: ["vue"] },
+    { path: "~/components/about", extensions: ["vue"] },
   ],
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
