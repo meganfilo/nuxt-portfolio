@@ -38,7 +38,7 @@ export default {
         height: 200px;
         margin: 0 auto 1.5rem auto;
         border-radius: 50%;
-        background: url("~/assets/images/headshot_photo_b&w.png") 0% 0% / cover no-repeat $primary-light;
+        background: url("~/assets/images/headshot_photo.webp") 0% 0% / cover no-repeat $primary-light;
         background-repeat: no-repeat;
     }
 

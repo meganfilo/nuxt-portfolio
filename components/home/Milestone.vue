@@ -1,7 +1,7 @@
 <template>
     <article class="milestone">
         <div class="milestone__icon--container">
-            <img :src="require(`~/assets/images/${img}.jpeg`)" aria-hidden="true" alt="" />
+            <img :src="require(`~/assets/images/${img}.webp`)" aria-hidden="true" alt="" />
         </div>
         <p class="date">{{ date }}</p>
         <h3 class="position">{{ position }} @ {{ company }}</h3>
@@ -86,8 +86,6 @@ export default {
     .position {
         margin: 0;
     }
-
-    .description {}
 
     .points {
         display: flex;

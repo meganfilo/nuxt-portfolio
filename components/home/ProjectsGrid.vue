@@ -17,13 +17,23 @@ export default {
             projects: [
                 {
                     title: 'Market Link Pro Suite Experience',
-                    image: 'market-link-pro-screencap.png',
+                    image: 'market-link-pro-screencap.webp',
                     stack: 'Adobe Experience Manager • LESS • jQuery',
                     description: "Previous contributor for a marketing site showcasing one of Jackson's newest annuity products.",
                     gitlab: null,
                     github: null,
                     link: 'https://www.jackson.com/annuities/registered-index-linked-annuities/market-link-pro-suite.html'
+                },
+                {
+                    title: 'Jackson Charitable Foundation',
+                    image: 'jcf-screencap.webp',
+                    stack: 'HTML • CSS • Javascript',
+                    description: "Previous maintainer for a marketing and blog site.",
+                    gitlab: null,
+                    github: null,
+                    link: 'https://www.jacksoncharitablefoundation.org'
                 }
+
             ]
         }
     }
