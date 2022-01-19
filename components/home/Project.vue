@@ -102,16 +102,14 @@ article.project {
 }
 
 @media screen and (min-width: 600px) {
-    .project {
-        flex-direction: row-reverse;
-        text-align: left;
+    article.project {
 
-        &:nth-of-type(2n+1) {
+        &:nth-of-type(odd) {
             flex-direction: row;
             text-align: right;
 
             .project__content {
-                padding-left: 1rem;
+                padding-left: 1.5rem;
             }
 
             .project__content .links {
@@ -119,14 +117,23 @@ article.project {
             }
         }
 
-    }
+        &:nth-of-type(even) {
+            text-align: left;
+            flex-direction: row-reverse;
 
-    .project__content {
-        padding-right: 1rem;
+            .project__content {
+                padding-right: 1.5rem;
+            }
 
-        .links {
-            justify-content: flex-start;
+            .project__content .links {
+                justify-content: flex-start;
+            }
         }
+
+        a.image-container {
+            max-width: 350px;
+            height: auto;
+        }       
 
         .links a {
             max-width: 25px;
