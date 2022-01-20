@@ -17,15 +17,12 @@ export default {
 .stack-item {
     position: relative;
     display: inline-block;
-    height: 120px;
+    height: 150px;
     width: 120px;
-    padding: 5px;
-    margin: .5rem;
 
     img {
         display: block;
         text-align: center;
-        margin: 0 auto;
         height: 80px;
         width: 80px;
         margin: 0 auto;
@@ -37,16 +34,15 @@ export default {
         text-align: center;
         visibility: hidden;
         font-size: 14px;
-        margin-top: 5px;
+        margin-top: 3px;
         overflow: hidden;
-        transition: font-size .2s;
         width: 100%;
     }
 
     &:hover {
         img {
-            height: 85px;
-            width: 85px;
+            height: 83px;
+            width: 83px;
             filter: drop-shadow(rgba(0,0,0,.3) 1px 1px 2px);
         }
 

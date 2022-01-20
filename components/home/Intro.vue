@@ -14,7 +14,7 @@
                     <p>I work as a frontend engineer at a company called <a href="https://www.gitlab.com" rel="noreferrer noopener" target="_blank">GitLab</a>. We're innovating in the realm of DevOps and committed to creating an environment where everyone can contribute.</p>
 
                     <p>This website is an evergreen document where I'll share what I've created and learned throughout my career.</p>
-                    <!-- <nuxt-link to="/about">Learn more about me here →</nuxt-link> -->
+                    <nuxt-link to="/about">Learn more about me here →</nuxt-link>
                 </div>
         </div>
         </Container>
@@ -28,7 +28,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~assets/styles/base.scss';
+@import '~assets/styles/_variables.scss';
 
 .intro {
     .photo {

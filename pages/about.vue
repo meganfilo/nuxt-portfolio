@@ -5,8 +5,9 @@
         <h1>About Me</h1>
         <p>
           I'm Megan Filo, a software engineer currently living in Milwaukee,
-          Wisconsin (or as Alice Cooper calls it, 'The Good Land').
+          Wisconsin (or as Alice Cooper calls it, 'The Good Land'). 🧀 🐄 🍺
         </p>
+        <p>I make websites and web apps of all shapes and sizes. I love working on projects that are focused around building the web presence of non-profits and small businesses, as well as creating UI that is accessible to all types of end users. The majority of my experience lies in frontend web development, but I enjoy working with backend code and Content Management Systems.</p>
         <p>
           I originally moved to Nashville, Tennessee in 2016 to start a career
           in the music business. I landed a job with a major record label that
@@ -42,6 +43,9 @@
 
       <section id="toolbox">
         <h2>Toolbox</h2>
+        <p>
+          I like to make cool shit with various combinations of these things:
+        </p>
         <div class="stack-grid">
           <StackItem
             v-for="item in stackItems"
@@ -62,17 +66,22 @@ export default {
     return {
       stackItems: [
         {
-          name: "Babel",
-          path: "babel",
+          name: "Vue 2 & 3",
+          path: "vuejs",
         },
         {
           name: "Bootstrap",
           path: "bootstrap",
         },
         {
-          name: "Bulma",
-          path: "bulma",
+          name: "GitLab",
+          path: "gitlab",
         },
+        {
+          name: "React",
+          path: "react",
+        },
+
         {
           name: "CSS",
           path: "css-3",
@@ -86,20 +95,20 @@ export default {
           path: "gatsby",
         },
         {
+          name: "Javascript",
+          path: "javascript",
+        },
+        {
           name: "Git",
           path: "git-icon",
         },
         {
+          name: "Typescript",
+          path: "typescript",
+        },
+        {
           name: "Github",
           path: "github-icon",
-        },
-        {
-          name: "GitLab",
-          path: "gitlab",
-        },
-        {
-          name: "GraphQL",
-          path: "graphql",
         },
         {
           name: "Handlebars",
@@ -112,6 +121,10 @@ export default {
         {
           name: "HTML",
           path: "html-5",
+        },
+        {
+          name: "Bulma",
+          path: "bulma",
         },
         {
           name: "Jest",
@@ -134,24 +147,26 @@ export default {
           path: "mongodb",
         },
         {
-          name: "Netlify",
-          path: "netlify",
+          name: "GraphQL",
+          path: "graphql",
         },
         {
           name: "NodeJS",
           path: "nodejs",
         },
         {
-          name: "NPM",
-          path: "npm",
+          name: "Babel",
+          path: "babel",
         },
+
         {
           name: "React Router",
           path: "react-router",
         },
+
         {
-          name: "React",
-          path: "react",
+          name: "NPM",
+          path: "npm",
         },
         {
           name: "Redux",
@@ -162,13 +177,14 @@ export default {
           path: "sass",
         },
         {
+          name: "Netlify",
+          path: "netlify",
+        },
+        {
           name: "Selenium",
           path: "selenium",
         },
-        {
-          name: "Shopify",
-          path: "shopify",
-        },
+
         {
           name: "VS Code",
           path: "visual-studio-code",
@@ -182,21 +198,14 @@ export default {
           path: "yarn",
         },
         {
+          name: "Shopify",
+          path: "shopify",
+        },
+        {
           name: "Docker",
           path: "docker",
         },
-        {
-          name: "Javascript",
-          path: "javascript",
-        },
-        {
-          name: "Vue 2 & 3",
-          path: "vuejs",
-        },
-        {
-          name: "Typescript",
-          path: "typescript",
-        },
+
         {
           name: "AEM",
           path: "aem_logo",
@@ -209,6 +218,34 @@ export default {
           name: "Next.js",
           path: "nextjs",
         },
+        {
+          name: "Strapi CMS",
+          path: "strapi-icon",
+        },
+        {
+          name: "Material UI",
+          path: "material-ui",
+        },
+        {
+          name: "Figma",
+          path: "figma",
+        },
+        {
+          name: "Markdown",
+          path: "markdown",
+        },
+        {
+          name: "YAML",
+          path: "yaml",
+        },
+        {
+          name: "HAML",
+          path: "haml",
+        },
+        {
+          name: "MJML",
+          path: "mjml_logo",
+        },
       ],
     };
   },
@@ -217,7 +254,11 @@ export default {
 
 <style lang="scss" scoped>
 section {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
+}
 
+.stack-grid {
+  padding: 1rem 0;
+  margin: 0;
 }
 </style>

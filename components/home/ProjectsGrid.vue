@@ -28,7 +28,7 @@ export default {
                     title: 'Jackson Charitable Foundation',
                     image: 'jcf-screencap.webp',
                     stack: 'HTML • CSS • Javascript',
-                    description: "Previous maintainer for a marketing and blog site.",
+                    description: "Previous maintainer for a philanthropic blog site.",
                     gitlab: null,
                     github: null,
                     link: 'https://www.jacksoncharitablefoundation.org'

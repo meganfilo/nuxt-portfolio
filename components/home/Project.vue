@@ -60,6 +60,7 @@ article.project {
         img {
             width: 100%;
             transition: transform 0.2s ease-in;
+            object-fit: scale-down;
 
             &:hover, 
             &:focus {
