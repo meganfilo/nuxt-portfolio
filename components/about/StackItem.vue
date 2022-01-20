@@ -58,4 +58,16 @@ export default {
         visibility: visible;
     }   
 }
+
+@media screen and (max-width: 423px) {
+    .stack-item {
+        height: 120px;
+        width: 110px;
+
+        img {
+            height: 70px;
+            width: 70px;
+        }
+    }
+}
 </style>
