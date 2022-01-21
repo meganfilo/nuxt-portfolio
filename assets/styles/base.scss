@@ -1,4 +1,7 @@
 @import "~/assets/styles/_variables.scss";
+* {
+    transition: background 0.2s ease-in;
+}
 
 html {
     scroll-behavior: smooth;
@@ -6,7 +9,6 @@ html {
 
 body {
     font-family: Helvetica, Arial, sans-serif;
-    color: $text-color;
     font-size: 16px;
     line-height: 1.6em;
     height: 100vh;
@@ -19,7 +21,6 @@ main {
 h1 {
     font-size: 2em;
     line-height: 1.25em;
-    color: $primary-color;
     margin: .83rem 0;
 }
 
@@ -32,28 +33,24 @@ h1 {
 h2 {
     font-size: 1.75em;
     line-height: 1.25em;
-    color: $header-color;
     text-align: center;
     position: relative;
     display: inline;
 
     &::after {
         content: '';
-        background: $primary-light;
         left: 0;
         height: 10px;
         z-index: -1;
         position: absolute;
         bottom: 0;
         width: 100%;
-        transition: background 0.2s ease-in-out;
     }
 }
 
 h3 {
     font-size: 1.5em;
     line-height: 1.25em;
-    color: $header-color;
     margin: .5rem 0;
 }
 
@@ -65,12 +62,7 @@ article:last-child {
     margin: 0 0 2rem 0;
 }
 
-strong, a {
-    color: $header-color;
-}
-
 a {
-    color: $primary-color;
     text-decoration: none;
 }
 
@@ -93,5 +85,50 @@ img {
 @media only screen and (min-width: 500px) {
     section:first-child {
         margin-top: 2rem;
+    }
+}
+
+.light {
+    background: $white;
+    color: $text-color;
+    transition: background 0.2s ease-in;
+
+    h1 {
+        color: $primary-color;
+    }
+
+    h2, h3, h4, h5, h6, strong {
+        color: $header-color;
+    }
+
+    h2::after {
+        background: $primary-light;
+    }
+
+    a {
+        color: $primary-color;
+    }
+}
+
+// DARK MODE
+.dark {
+    background: $dark-mode-light;
+    color: $dark-mode-white;
+    transition: background 0.2s ease-in;
+
+    h1 {
+        color: $primary-light;
+    }
+
+    h2, h3, h4, h5, h6, strong {
+        color: $white;
+    }
+
+    h2::after {
+        background: $primary-color;
+    }
+
+    a {
+        color: $primary-light;
     }
 }

@@ -42,6 +42,13 @@ export default {
 
 <style lang="scss" scoped>
 @import '~assets/styles/_variables.scss';
+.dark {
+    .milestone {
+        background: $dark-mode-light;
+    }
+}
+
+
 
 .milestone {
     background: $white;

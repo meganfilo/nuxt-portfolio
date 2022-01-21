@@ -59,9 +59,16 @@ export default {
 
 <style lang="scss" scoped>
 @import '~assets/styles/_variables.scss';
+.dark {
+    .timeline {
+        background: $dark-mode-dark;
+        transition: background 0.2s ease-in;
+    }
+}
+
 
 .timeline {
-    background-color: $secondary-color;
+    background: $secondary-color;
     transform: skew(0deg, -7deg);
 
     &__content {
@@ -72,7 +79,6 @@ export default {
 }
 
 .milestones-container {
-    // padding: 5rem 0;
     padding-top: 5rem;
 }
 </style>

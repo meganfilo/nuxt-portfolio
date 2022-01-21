@@ -29,7 +29,6 @@ export default {
 
 <style lang="scss" scoped>
 @import '~assets/styles/_variables.scss';
-
 .intro {
     .photo {
         display: block;

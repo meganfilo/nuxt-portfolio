@@ -65,4 +65,8 @@ footer {
     }
 }
 
+.dark footer {
+    background: $dark-mode-dark;
+}
+
 </style>
