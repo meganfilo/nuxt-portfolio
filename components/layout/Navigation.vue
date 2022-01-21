@@ -7,16 +7,6 @@
               <NuxtLink to="/about">About</NuxtLink>
               <ColorModeToggle :mode="mode" @toggle="$emit('toggle')"/>
             </div>
-            <!-- <div @click="toggleMobileNav" class="hamburger-container" v-show="mobile">
-                <img :class="{'icon-active' : mobileNav}" src="~/assets/images/icons/hamburger.svg" alt="Click to open nav menu" />
-            </div>
-            <transition name="mobile-nav">
-              <div v-show="mobileNav" class="mobile-nav-links">
-                <NuxtLink to="/about">About</NuxtLink>
-                <NuxtLink to="/articles">Articles</NuxtLink>
-              <div class="mode-switch">☀️</div>
-            </div>
-            </transition> -->
         </nav>
       </Container>
   </header>
@@ -25,12 +15,6 @@
 <script>
 export default {
   props: ['mode'],
-  data() {
-    return {
-      mobile: true,
-      mobileNav: true,
-    }
-  }
 }
 </script>
 
@@ -71,29 +55,6 @@ nav {
     .mode-switch {
       font-size: 1.5em;
     }
-  }
-
-  .icon-active {
-    transform: rotate(180deg);
-  }
-
-  .mobile-nav-links {
-    z-index: 3;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    width: 100%;
-    max-width: 250px;
-    height: 100%;
-    background-color: $primary-color;
-    top: 0;
-    left: 0;
-    border-right: 1px solid black;
-
-      a, a:hover, .nuxt-link, .nuxt-link-active {
-        margin-left: 0;
-        color: $white;
-      }
   }
 }
 

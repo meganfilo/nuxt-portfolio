@@ -24,7 +24,7 @@ export default {
     transition: transform 0.3s ease-in;
 
     &:hover {
-        transform: rotate(45deg);
+        transform: scale(1.1);
     }
 }
 </style>
