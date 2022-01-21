@@ -36,6 +36,7 @@ h2 {
     text-align: center;
     position: relative;
     display: inline;
+    z-index: 2;
 
     &::after {
         content: '';
