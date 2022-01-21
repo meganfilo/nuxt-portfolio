@@ -5,7 +5,7 @@
             <NuxtLink to="/" exact class="brand">Megan<span>Filo</span></NuxtLink>
             <div  class="nav-links">
               <NuxtLink to="/about">About</NuxtLink>
-              <ColorModeToggle :mode="mode" @toggle="$emit('toggle')"/>
+              <ColorModeToggle :mode="mode" @toggleMode="$emit('toggleMode')"/>
             </div>
         </nav>
       </Container>

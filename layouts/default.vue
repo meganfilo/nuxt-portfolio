@@ -1,6 +1,6 @@
 <template>
     <div :class="(mode === 'dark') ? 'dark' : 'light'">
-        <Navigation :mode="mode" @toggle="toggle" />
+        <Navigation :mode="mode" @toggleMode="toggleMode" />
          <Nuxt />
         <Footer />
     </div>
@@ -10,11 +10,11 @@
 export default {
     data() {
         return {
-            mode: 'dark'
+            mode: 'light'
         }
     },
     methods: {
-        toggle() {
+        toggleMode() {
             if (this.mode == 'dark') {
                 this.mode = 'light'
             } else {

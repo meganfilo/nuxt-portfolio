@@ -1,5 +1,5 @@
 <template>
-    <div @click="$emit('toggle')" class="mode-switch">    {{ currentMode }}
+    <div @click="$emit('toggleMode')" class="mode-switch">    {{ currentMode }}
  </div>
 </template>
 
