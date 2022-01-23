@@ -61,6 +61,9 @@
 
 <script>
 export default {
+  head: {
+    title: 'About'
+  },
   name: "AboutPage",
   data() {
     return {

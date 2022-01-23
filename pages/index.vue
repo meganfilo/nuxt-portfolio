@@ -8,6 +8,9 @@
 
 <script>
 export default {
+  head: {
+    title: 'Home'
+  },
   name: "IndexPage",
 };
 </script>

@@ -25,6 +25,9 @@
 
 <script>
 export default {
+  head: {
+    title: 'Articles'
+  },
   async asyncData({ $content, params }) {
     const articles = await $content("articles", params.slug)
       .only(["title", "description", "slug", "year", "month", "day", "tags"])
