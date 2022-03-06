@@ -138,6 +138,10 @@ img {
 .article .nuxt-content {
     h2 {
         z-index: 0;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        display: block;
+        text-align: left;
 
         &::after {
             width: 0;
@@ -146,7 +150,14 @@ img {
         }
     }
 
+    h2 ~ h3 {
+        margin-top: 1rem;
+    }
+
     h3 {
+        display: block;
+        text-align: left;
+        margin-top: 2rem;
         font-weight: 500;
     }
 
@@ -160,7 +171,28 @@ img {
         padding: 1rem 0;
     }
 
-    pre {
+    p > code {
+        background: rgba(0,0,0,0.05);
+        border-radius: $border-radius;
+        padding: 1px 4px;
+        border-radius: 6px;
+        font-weight: 500;
+        padding: 2px 3px;
+        white-space: pre-wrap;
+    }
+
+    .nuxt-content-highlight .filename {
+        margin-top: 2rem;
+        font-size: 13px;
+        display: block;
+        text-align: right;
+    }
+    .nuxt-content-highlight .filename ~ pre {
+        margin: 0 0 2rem 0;
+    }
+
+    .nuxt-content-highlight > pre {
+        margin: 2rem 0;
         background: $dark-mode-dark;
         text-shadow: none;
         color: $dark-mode-white;
@@ -179,5 +211,15 @@ img {
         .class { color: $class}
         .tag { color: $tag}
         .error { color: $error}
+    }
+
+
+
+    .token.operator, 
+    .token.entity, 
+    .token.url, 
+    .language-css .token.string, 
+    .style .token.string {
+        background: none;
     }
 }

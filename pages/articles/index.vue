@@ -12,7 +12,7 @@
                 <p>{{article.month}} {{article.day}}, {{ article.year}}</p>
               <h2>{{ article.title }}</h2>
                 <div class="tags">
-                    <a href="/" v-for="tag of article.tags" :key="tag">{{tag}}</a>
+                    <span v-for="tag of article.tags" :key="tag.toString()">{{tag}}</span>
                 </div>
               <p>{{ article.description }}</p>
             </div>
@@ -31,7 +31,7 @@ export default {
   async asyncData({ $content, params }) {
     const articles = await $content("articles", params.slug)
       .only(["title", "description", "slug", "year", "month", "day", "tags"])
-    //   .sortBy("createdAt", "asc")
+      .sortBy("createdAt", "asc")
       .fetch();
 
     return { articles };
@@ -99,7 +99,7 @@ export default {
             flex-wrap: wrap;
             margin: 1rem 0;
 
-            a {
+            span {
                 display: inline-block;
                 font-size: .9rem;
                 font-weight: 600;
@@ -114,9 +114,9 @@ export default {
                 text-decoration: none;
                 text-transform: lowercase;
 
-                &:hover {
-                    background-color: lighten($secondary-color, 10%);
-                }
+                // &:hover {
+                //     background-color: lighten($secondary-color, 10%);
+                // }
             }
         }
     }
