@@ -166,7 +166,7 @@ Let's dissect it!
 
 Our script tag is letting the document know that the code within it is a combination of JSON and Linked Data. Linked Data is a bit of extra spice we can use on top of JSON notation that provides additional categorial mappings in our data. Google and most major search engines support, and encourage, the use of this format.
 
-Under **@context**, we are telling the search engine that the schema rules we're following is out of the Schema.org rule book; specifically using their 'FAQPage' **@type** of schema.
+Under **@context**, we are telling the search engine that the schema rules we're following are out of the Schema.org rule book; specifically using their 'FAQPage' **@type** of schema.
 
 **mainEntity** is an array that holds the meat and potatoes of our schema. In this case, any and all question data can be put in here.
 
