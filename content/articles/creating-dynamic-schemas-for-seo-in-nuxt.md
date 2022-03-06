@@ -1,5 +1,5 @@
 ---
-title: Creating Dynamic Schemas for SEO in Nuxt using Context and YAML
+title: Creating Dynamic Schemas for SEO in Nuxt using Content and YAML
 description: Let's learn about an advanced SEO concept called Schemas and how we can create them within our dynamic Nuxt pages.
 tags: ["Nuxt", "SEO", "Vue"]
 year: 2022
@@ -80,7 +80,7 @@ body_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm
 
 ### Fetch YAML content into our article page
 
-Now we'll need to fetch our data from our YAML file using the Content module to populate our _articles page!
+Now we'll need to fetch our data from our YAML file using the Content module to populate our \_articles page!
 
 In `_articles.vue`, within your script tags, add this async function.
 
