@@ -16,6 +16,15 @@ export default {
         return {
             projects: [
                 {
+                    title: 'RILA Performance Calculator Tool',
+                    image: 'rila-tool.webp',
+                    stack: 'React • Typescript • Adobe Experience Manager',
+                    description: "Previous project lead for a financial calculator app for Jackson. This works in tandem with a market data API supplied from a third-party vendor. ",
+                    gitlab: null,
+                    github: null,
+                    link: 'https://www.jackson.com/annuities/registered-index-linked-annuities/market-link-pro-suite.html#tool'
+                },
+                {
                     title: 'Market Link Pro Suite Experience',
                     image: 'market-link-pro-screencap.webp',
                     stack: 'Adobe Experience Manager • LESS • jQuery',
